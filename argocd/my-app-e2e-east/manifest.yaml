@@ -1,0 +1,23 @@
+# App: argocd/my-app-e2e-east (https://localhost:8080/applications/argocd/my-app-e2e-east)
+# Commit: 10204d6e27dd4c853a2f04dff17b4f8c439ffc6f Michael Crenshaw <350466+crenshaw-dev@users.noreply.github.com> fix patches
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: my-app
+  name: my-deployment-e2e-east
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - image: gcr.io/heptio-images/ks-guestbook-demo:0.1
+        name: my-container
+        ports:
+        - containerPort: 80
