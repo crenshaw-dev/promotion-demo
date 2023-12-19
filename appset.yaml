@@ -11,7 +11,7 @@ spec:
             elements:
               - env: dev
               - env: e2e
-              - env: prod
+              - env: prd
         - list:
             elements:
               - region: east
