@@ -1,5 +1,5 @@
 # App: argocd/my-app-prd-east (https://localhost:8080/applications/argocd/my-app-prd-east)
-# Commit: 10204d6e27dd4c853a2f04dff17b4f8c439ffc6f Michael Crenshaw <350466+crenshaw-dev@users.noreply.github.com> fix patches
+# Commit: 8bda8c47ad9b72f165af37e82c759449e2be2d2e Michael Crenshaw <350466+crenshaw-dev@users.noreply.github.com> bump tag version Signed-off-by: Michael Crenshaw <350466+crenshaw-dev@users.noreply.github.com>
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -17,7 +17,7 @@ spec:
         app: my-app
     spec:
       containers:
-      - image: gcr.io/heptio-images/ks-guestbook-demo:0.1
+      - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
         name: my-container
         ports:
         - containerPort: 80
