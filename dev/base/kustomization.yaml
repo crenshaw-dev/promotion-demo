@@ -8,5 +8,4 @@ patches:
       value: 2
   target:
     kind: Deployment
-    name: my-app
-    namespace: my-namespace
+    name: my-deployment
