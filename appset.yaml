@@ -27,3 +27,6 @@ spec:
       source:
         repoURL: https://github.com/crenshaw-dev/promotion-demo
         path: '{{.env}}/{{.region}}'
+      syncPolicy:
+        automated:
+          prune: true
