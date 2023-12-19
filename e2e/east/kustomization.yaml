@@ -1,0 +1,4 @@
+nameSuffix: -e2e-east
+
+resources:
+  - ../base

@@ -1,0 +1,4 @@
+nameSuffix: -prd-west
+
+resources:
+  - ../base

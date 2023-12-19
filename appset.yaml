@@ -1,0 +1,29 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: appset
+spec:
+  goTemplate: true
+  generators:
+  - matrix:
+      generators:
+        - list:
+            elements:
+              - env: dev
+              - env: e2e
+              - env: prod
+        - list:
+            elements:
+              - region: east
+              - region: west
+  template:
+    metadata:
+      name: 'my-app-{{.env}}-{{.region}}'
+    spec:
+      project: default
+      destination:
+        server: https://kubernetes.default.svc
+        namespace: default
+      source:
+        repoURL: https://github.com/crenshaw-dev/promotion-demo
+        path: '{{.env}}/{{.region}}'

@@ -1,0 +1,4 @@
+nameSuffix: -prd-east
+
+resources:
+  - ../base

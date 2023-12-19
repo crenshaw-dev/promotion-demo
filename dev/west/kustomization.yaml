@@ -1,0 +1,4 @@
+nameSuffix: -dev-west
+
+resources:
+  - ../base
