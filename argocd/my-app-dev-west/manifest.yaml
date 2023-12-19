@@ -1,5 +1,5 @@
-App: argocd/my-app-dev-west (https://localhost:8080/applications/argocd/my-app-dev-west)
-Commit: 10204d6e27dd4c853a2f04dff17b4f8c439ffc6f Michael Crenshaw <350466+crenshaw-dev@users.noreply.github.com> fix patches
+# App: argocd/my-app-dev-west (https://localhost:8080/applications/argocd/my-app-dev-west)
+# Commit: 10204d6e27dd4c853a2f04dff17b4f8c439ffc6f Michael Crenshaw <350466+crenshaw-dev@users.noreply.github.com> fix patches
 apiVersion: apps/v1
 kind: Deployment
 metadata:
